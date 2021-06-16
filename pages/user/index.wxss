@@ -1,0 +1,118 @@
+Page{
+  background-color: #eee;
+}
+.user-info-wrap{
+ width: 100vw;
+  height: 40vh;
+  background-color:  var(--themeColor);
+  position: relative;
+}
+.user-img-bck{
+ 
+  position: relative;
+}
+.user-img-bck .user-bck{
+  width:105vw;
+  margin-left: -10rpx;
+  height: 43vh;
+  filter: blur(10rpx);
+}
+.user-info{
+position: absolute;
+left: 50%;
+transform: translate(-50%);
+top: 20%;
+}
+.user-info .user-icon{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user-info  .user-name{
+  text-align: center;
+  margin-top: 20rpx;
+}
+.login{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 60%;
+  border: 1rpx solid #fff;
+  color: #fff;
+  padding: 20rpx;
+}
+.user-content{
+  position: relative;
+}
+.user-main{
+ width: 90%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -40rpx;
+  padding-bottom: 50rpx;
+  
+}
+.history-wrap{
+  display: flex;
+  background-color: #fff;
+}
+.history-wrap navigator{
+  flex: 1;
+  text-align: center;
+  font-size: 24rpx;
+  padding: 10rpx 0;
+}
+.history-wrap .his-num{
+  color: var(--themeColor) ;
+}
+.orders-wrap{
+margin-top: 20rpx;
+background-color: #fff;
+color: rgb(112, 112, 112);
+  font-size: 24rpx;
+}
+.my-order{
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.orders-list{
+ display: flex;
+}
+.orders-list navigator{
+  flex: 1;
+    text-align: center;
+    padding: 20rpx 0;
+}
+.orders-list .orders-icon{
+  color: var(--themeColor) ;
+font-size: 40rpx;
+}
+.address-wrap{
+ margin-top: 20rpx;
+  background-color: #fff;
+  padding: 20rpx 10rpx;
+}
+.app-info-wrap{
+   background-color: #fff;
+   margin-top: 20rpx;
+  
+}
+.app-info-wrap .app-info-item{
+padding: 20rpx 10rpx;
+display: flex;
+justify-content: space-between;
+}
+.app-info-wrap .app-info-item:nth-last-child(-n+2){
+  border-top: 1rpx solid #ccc;
+}
+.share-wrap{
+   margin-top: 20rpx;
+  background-color: #fff;
+  padding: 20rpx 10rpx;
+  
+}
+
+
+
+

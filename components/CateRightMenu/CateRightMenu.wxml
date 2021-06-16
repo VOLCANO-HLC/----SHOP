@@ -1,0 +1,17 @@
+<view>
+  <scroll-view scroll-y scroll-top="{{scrollTop}}" class="cate-right">
+    <view wx:for="{{rightList}}" wx:for-item="item1" wx:key="cat_id">
+      <view class="right-title" selectable="false" space="false" decode="false">
+        / {{item1.cat_name}} /
+      </view>
+      <view class="right-menu-main">
+        <view class="menu-item" wx:for="{{item1.children}}" wx:for-item="item2" wx:key="cat_id">
+          <navigator url="/pages/goods_list/index?cid={{item2.cat_id}}" open-type="navigate">
+            <image src="{{item2.cat_icon}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+            <view>{{item2.cat_name}}</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

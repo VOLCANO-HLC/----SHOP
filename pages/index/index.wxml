@@ -1,0 +1,38 @@
+<!-- index.wxml -->
+<view class="shop-index">
+  <!-- 搜索框  开始 -->
+  <SearchInput />
+  <!-- 搜索框 结束 -->
+  <!-- 首个轮播图  开始 -->
+  <view>
+    <swiper class="index-swip-first" autoplay="false" indicator-dots="true" indicator-active-color="#fe5e49" interval="3000" duration="1000" circular="true">
+      <swiper-item class="" item-id="{{item.goods_id}}" wx:for="{{swiperList}}" wx:key="goods_id">
+        <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+          <image class="" src="{{item.image_src}}" mode="widthFix" />
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 首个轮播图 结束 -->
+  <!-- 分类导航栏 开始 -->
+  <view class=" index-cates-list">
+    <navigator url="/pages/category/index" open-type="switchTab" wx:for="{{catesList}}" wx:key="name">
+      <image src="{{item.image_src}}" mode="widthFix" />
+    </navigator>
+  </view>
+  <!-- 分类导航栏 结束 -->
+  <!-- floor板块 开始 -->
+  <view class="index-floor">
+    <view class="floor-item1" wx:for="{{ floorList}}" wx:for-item="item1" wx:for-index="index1" wx:key="name">
+      <view class="floor-title">
+        <image class="" src="{{item1.floor_title.image_src}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+      </view>
+      <view class="floor-list">
+        <navigator wx:for="{{item1.product_list}}" wx:for-index="index2" wx:for-item="item2" wx:key="name" url="{{item2.navigator_url}}" class="list-item">
+          <image class="" src="{{item2.image_src}}" mode="{{index2===0?'widthFix':'scaleToFill'}}" lazy-load="false" binderror="" bindload="" />
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!-- floor板块 结束 -->
+</view>

@@ -1,0 +1,46 @@
+.index-swip-first{
+  width: 100vw;
+  height: calc(100vw * 340 / 750);
+}
+.index-swip-first image{
+  width: 100%;
+}
+.index-cates-list{
+  width: 100%;
+  display: flex;
+  
+}
+.index-cates-list navigator{
+  padding: 30rpx;
+  flex: 1;
+}
+.index-cates-list navigator image{
+  width: 100%;
+}
+/* floor楼层 */
+.floor-title image{
+  width: 100%;
+}
+.floor-list{
+  /* display: flex; */
+  width: 100vw;
+   overflow: hidden;
+  /* flex-wrap: wrap; */
+}
+.floor-list .list-item{
+  float: left;
+ border-bottom: 5rpx solid #fff;
+ border-left: 10rpx solid #fff;
+
+   width:32vw;
+}
+
+.floor-list .list-item image{
+  width:100%;
+   height: calc(32vw * 386 / 232 );
+
+}
+.floor-list .list-item image:nth-last-child(-n+4){
+  width: 32vw;
+  height: calc(32vw * 380 / 232 / 2);
+}

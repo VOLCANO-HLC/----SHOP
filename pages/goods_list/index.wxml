@@ -1,0 +1,5 @@
+<SearchInput></SearchInput>
+<Tabs tabs="{{tabs}}" bindtitleTap="titleTap"></Tabs>
+<List-Content wx:if="{{tabs[0].isActive}}" goodsList="{{goodsList}}"></List-Content>
+<List-Content wx:elif="{{tabs[1].isActive}}">1</List-Content>
+<List-Content wx:elif="{{tabs[2].isActive}}">2</List-Content>

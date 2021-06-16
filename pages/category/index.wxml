@@ -1,0 +1,8 @@
+<!-- pages/category/index.wxml -->
+<view>
+  <SearchInput></SearchInput>
+  <view class="cate-menu">
+    <CateLeftMenu leftList="{{leftMenuList}}" bindmenuTap="menuTap"></CateLeftMenu>
+    <CateRightMenu rightList="{{rightMenuList}}" scrollTop="{{scrollTop}}"></CateRightMenu>
+  </view>
+</view>

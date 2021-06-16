@@ -1,0 +1,65 @@
+<view class="cart">
+  <view class="receive-address">
+    <!-- 如果未选中地址，则显示按钮 -->
+    <view class="address-button" wx:if="{{!address.userName}}">
+      <button bindtap="getAddress" type="primary" plain>获取收货地址</button>
+    </view>
+    <!-- 如果已经选中，则显示详细地址 -->
+    <view class="address" wx:else>
+      <view class="address-name">
+        <view>收件人：{{address.userName}}</view>
+        <view>收货地址： 
+          {{address.all}}</view>
+      </view>
+      <view class="address-tel">电话： {{address.telNumber}}</view>
+    </view>
+  </view>
+  <view class="cart-list">购物车</view>
+  <block wx:if="{{cartList.length}}">
+    <view class="cart-item" wx:for="{{cartList}}" wx:key="goods_id">
+      <!-- 复选框 -->
+      <view class="checkbox">
+        <checkbox-group bindchange="itemChoose" data-goodsId="{{item.goods_id}}">
+          <checkbox checked="{{item.checked}}" value="" color=" var(--themeColor)"></checkbox>
+        </checkbox-group>
+      </view>
+      <!-- 图片跳转 -->
+      <navigator class="goos-img" url="/pages/goods_detail/index?goods_id={{item.goods_id}}" open-type="navigate">
+        <image src="{{item.goods_small_logo}}" mode="widthFix" />
+      </navigator>
+      <!-- 商品信息 -->
+      <view class="goods-info">
+        <view class="good-name">{{item.goods_name}}</view>
+        <view class="good-pri-num">
+          <view class="good-price">￥{{item.goods_price}}</view>
+          <view class="good-num">
+            <view class="num-des" bindtap="desNum" data-goodsId="{{item.goods_id}}">-</view>
+            <view class="num">{{item.num}}</view>
+            <view class="num-add" bindtap="addNum" data-goodsId="{{item.goods_id}}">+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fa4064bdab5f6c800ed664014f3eb7d13a4dd25b3138d0-hYHe07_fw658&refer=http%3A%2F%2Fhbimg.b0.upaiyun.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1625384448&t=8dc69484f367819de64fb709139c04ac" mode="widthFix" />
+  </block>
+  <view class="cart-bottom">
+    <!-- 复选框 -->
+    <view class="bt-checkbox">
+      <checkbox-group bindchange="allChoose">
+        <checkbox checked="{{allChecked}}" value="" color=" var(--themeColor)">全选</checkbox>
+      </checkbox-group>
+    </view>
+    <view class="to-settle">
+      <view class="all-price">
+        <view>合计：</view>
+        <view>
+          <view class="money">￥{{totalPrice}}</view>
+          <view class="freight">包含运费</view>
+        </view>
+      </view>
+      <view class="settle" bindtap="toPay">结算({{ totalNum}})</view>
+    </view>
+  </view>
+</view>

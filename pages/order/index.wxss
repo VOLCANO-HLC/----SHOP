@@ -1,0 +1,47 @@
+/* pages/order/index.wxss */
+.orders-item{
+  padding: 20rpx 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  color: #aaa;
+}
+.order-no-row ,.order-price-row,.order-time-row{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20rpx;
+}
+.order-price-row .order-price-value{
+  color: var(--themeColor) ;
+}
+.order-time-row .order-time-row{
+color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

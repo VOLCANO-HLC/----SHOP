@@ -1,0 +1,5 @@
+<scroll-view scroll-y class="cate-left">
+  <view wx:for="{{leftList}}" wx:key="item" bindtap="getActive" data-index="{{index}}" class="{{currentIndex===index?'active  left-item':'left-item'}}">
+    {{item}}
+  </view>
+</scroll-view>

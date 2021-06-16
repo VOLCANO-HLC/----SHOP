@@ -1,0 +1,4 @@
+<view class="up-content">
+  <image src="{{scr}}" />
+  <icon type="clear" size="28" color="red"></icon>
+</view>

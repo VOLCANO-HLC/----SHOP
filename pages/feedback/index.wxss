@@ -1,0 +1,55 @@
+/* pages/feedback/index.wxss */
+.fb-main{
+background-color: #eee;
+height: 100vh;
+}
+.fb-tips{
+  margin-left: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.fb-tips text{
+  width: 30%;
+  background-color: #fff;
+  padding: 10rpx ;
+ margin: 20rpx 10rpx;
+}
+.fb-tool{
+  display: flex;
+  flex-wrap: wrap;
+}
+.fb-tool .up-image{
+  margin-bottom: 20rpx;
+margin-left: 20rpx;
+}
+.fb-content{
+  background-color: #fff;
+  margin: 20rpx;
+  padding: 30rpx;
+  
+}
+.form-btn{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

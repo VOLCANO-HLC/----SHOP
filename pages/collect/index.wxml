@@ -1,0 +1,12 @@
+<Tabs tabs="{{tabs}}" bindtitleTap="titleTap">
+  <view class="collect-main">
+    <view class="collect-titles">
+      <text class="title-item active">全部</text>
+      <text class="title-item">正在热卖</text>
+      <text class="title-item">即将上线</text>
+    </view>
+    <view class="collect-list">
+      <List-Content goodsList="{{collectedList}}"></List-Content>
+    </view>
+  </view>
+</Tabs>

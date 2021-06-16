@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Tabs": "../../components/Tabs/Tabs",
+    "List-Content": "../../components/List-Content/List-Content"
+  },
+  "navigationBarTitleText": "收藏"
+}

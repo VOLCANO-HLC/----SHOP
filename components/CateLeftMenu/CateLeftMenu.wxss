@@ -1,0 +1,27 @@
+/* components/CateLeftMenu/CateLeftMenu.wxss */
+/* .cate-left view{
+   margin: 0;
+   padding: 0;
+} */
+.cate-left{
+   margin: 0;
+   padding: 0;
+  font-size:30rpx;
+  padding-top: 15rpx;
+    vertical-align: middle;
+    background-color: rgb(247, 247, 247);
+}
+.left-item{
+  margin-top: 20rpx;
+    padding-top: 10rpx;
+    text-align: center;
+    width: 200rpx;
+    height: 60rpx;
+   padding-left: 10rpx;
+ 
+  
+}
+.active{
+  color: var(--themeColor);
+  border-left: 5rpx solid  var(--themeColor);
+}

@@ -1,0 +1,46 @@
+/* pages/collect/index.wxss */
+page{
+  background-color: #eee;
+}
+.collect-titles{
+  padding: 40rpx 0;
+}
+.collect-titles .title-item{
+  padding: 20rpx;
+  border: 1rpx solid #ccc;
+  margin-left: 40rpx;
+  background-color: #fff;
+}
+.collect-titles .active{
+    color: var(--themeColor) ;
+  border-color: currentColor;
+}
+.collect-list{
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

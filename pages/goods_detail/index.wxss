@@ -1,0 +1,102 @@
+/* pages/goods_detail/index.wxss */
+.detail-swiper{
+  width: 100%;
+  height: 500rpx;
+  text-align: center;
+
+}
+.detail-swiper image{
+  width: 60%;
+}
+.good-price{
+  padding-top: 20rpx;
+  color: var(--themeColor);
+  font-size: 36rpx;
+  font-weight: bolder;
+}
+.goods-name-collect{
+  
+  font-size: 30rpx;
+  display: flex;
+  width: 100vw;
+  padding-bottom: 30rpx;
+  padding-top: 20rpx;
+
+}
+.goods-name-collect .good-name{
+  width:75% ;
+  border-right: 2rpx solid #ccc;
+   display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.goods-name-collect .good-collect{
+ padding-left: 60rpx;
+ text-align: center;
+}
+.good-info{
+  padding-bottom: 100rpx;
+}
+.good-info .good-title{
+  color: var(--themeColor);
+  font-size: 36rpx;
+  font-weight: bolder;
+  padding: 30rpx;
+  border-top: solid 10rpx #eee;
+  border-bottom: 10rpx solid #eee;
+}
+.btm-tool{
+  display: flex;
+  width: 100vw;
+  height: 100rpx;
+  border-top: 2rpx solid #ccc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+.tool-item{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  justify-content: center;
+height: 100%;
+ position: relative;
+  overflow: hidden;
+
+
+}
+.service{
+  width: 20%;
+ 
+}
+.tool-item button{
+  position: absolute;
+  top: 0;
+left: 0;
+ width: 100%;
+  height: 100%;
+  opacity:0;
+}
+.share-cart{
+width: 15%;
+
+}
+.word{
+  flex: 1;
+
+}
+.btm-tool .in-cart{
+background-color: orange;
+color: #fff;
+  
+}
+.btm-tool .shop{
+color: #fff;
+background-color: tomato;
+}
+
+

@@ -1,0 +1,15 @@
+/* components/UpImage/UpImage.wxss */
+.up-content{
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+}
+.up-content image{
+  width: 100%;
+  height: 100%;
+}
+.up-content icon{
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+}

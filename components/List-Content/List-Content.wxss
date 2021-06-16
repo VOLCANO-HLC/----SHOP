@@ -1,0 +1,36 @@
+/* components/List-Content/List-Content.wxss */
+.list-content .list-item{
+   display: flex;
+}
+.list-item .item-content{
+display: flex;
+padding-bottom: 40rpx;
+border-bottom: 2rpx solid #ccc;
+align-items: center;
+/* justify-content:space-between; */
+
+
+
+}
+.item-content .item-image{
+  padding-left: 40rpx;
+width:33vw;
+}
+.item-content .item-info{
+ padding-left: 40rpx;
+ padding-top: 40rpx;
+  flex: 1;
+}
+ .item-info .item-title{
+  width: 60vw;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.item-info .item-price{
+  /* margin-top: 80rpx; */
+  padding-top: 60rpx;
+color: var(--themeColor);
+font-size: 40rpx;
+  font-weight: bolder;
+}

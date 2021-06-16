@@ -1,0 +1,101 @@
+/* pages/cart/index.wxss */
+
+.address{
+  display: flex;
+  font-size: 24rpx;
+}
+.address .address-name{
+  padding: 20rpx;
+  flex: 5;
+}
+.address .address-tel{
+  padding: 20rpx;
+  flex: 3;
+  text-align: right;
+}
+.cart-list{
+  font-weight: bolder;
+  font-size: 36rpx;
+  color: var(--themeColor);
+padding: 40rpx;
+border-top: 5rpx solid currentColor;
+border-bottom:  5rpx solid currentColor;
+}
+.cart-item{
+  width: 100vw;
+  display: flex;
+  padding-top: 20rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+
+.cart-item .goos-img{
+  flex: 2;
+  padding: 20rpx;
+}
+.cart-item .goods-info{
+  flex: 4;
+} 
+.goods-info .good-name{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 110rpx;
+}
+.good-pri-num{
+  padding-top: 50rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.good-pri-num .good-price{
+  color: var(--themeColor);
+}
+.good-pri-num .good-num{
+  display: flex;
+}
+
+.good-num .num{
+    text-align: center;
+  width: 80rpx;
+  height: 50rpx;
+}
+
+.cart-bottom{
+height: 90rpx;
+width: 100vw;
+overflow: hidden;
+position: fixed;
+bottom: 0;
+left: 0;
+border-top: #ccc solid 2rpx;
+background-color: #fff;
+
+}
+
+.to-settle{
+  display: flex;
+  padding-left: 30vw;
+}
+.all-price{
+  display: flex;
+  text-align: right;
+  width: 70vw;
+
+}
+.all-price .freight{
+  font-size: 24rpx;
+}
+.all-price .money{
+  color: var(--themeColor);
+  font-size: 40rpx;
+}
+.settle{
+  width: 40vw;
+  background-color: var(--themeColor);
+  color: #fff;
+  text-align: center;
+
+
+ line-height: 90rpx;
+}

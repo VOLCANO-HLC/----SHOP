@@ -1,0 +1,14 @@
+<view class="list-content">
+  <slot></slot>
+  <view class="list-item" wx:for="{{goodsList}}" wx:key="goods_id">
+    <navigator class="item-content" url="/pages/goods_detail/index?goods_id={{item.goods_id}}" hover-class="navigator-hover" open-type="navigate">
+      <view class="item-image">
+        <image class="" src="{{item.goods_small_logo?item.goods_small_logo:'../../icons/noPhoto.jpg'}}" mode="widthFix" />
+      </view>
+      <view class="item-info">
+        <view class="item-title">{{item.goods_name}}</view>
+        <view class="item-price">￥{{item.goods_price}}</view>
+      </view>
+    </navigator>
+  </view>
+</view>
